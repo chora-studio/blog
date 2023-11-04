@@ -1,0 +1,23 @@
+:root {
+    --c-brand: #3CA;
+    --c-bg: #FFF;
+    --c-text: #111;
+    --c-text-accent: var(--c-brand);
+    --c-text-light: var(--c-brand);
+    --c-text-lighter: var(--c-text);
+    --c-text-lightest: var(--c-text);
+    --c-border: #EEE;
+    --c-border-dark: #DDD;
+}
+
+html.dark {
+    --c-brand: #3CA;
+    --c-bg: #111;
+    --c-text: #EEE;
+    --c-text-accent: var(--c-brand);
+    --c-text-light: var(--c-brand);
+    --c-text-lighter: var(--c-text);
+    --c-text-lightest: var(--c-text);
+    --c-border: #222;
+    --c-border-dark: #111;
+}
