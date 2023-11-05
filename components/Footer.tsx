@@ -24,15 +24,17 @@ const Footer = () => {
           <h3>{'chora studio'}</h3>
           <ul>
             <li>
-              <Link href="https://chora.studio/products">{'products ↗'}</Link>
+              <Link href="https://chora.studio/products" target="_blank">
+                {'products ↗'}
+              </Link>
             </li>
             <li>
-              <Link href="https://chora.studio/solutions">
+              <Link href="https://chora.studio/solutions" target="_blank">
                 {'solutions ↗'}
               </Link>
             </li>
             <li>
-              <Link href="https://chora.studio/validator">
+              <Link href="https://chora.studio/validator" target="_blank">
                 {'validator ↗'}
               </Link>
             </li>

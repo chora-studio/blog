@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 import Background from '@components/Background'
-import { getAllPosts } from '@utils/posts'
+// import { getAllPosts } from '@utils/posts'
 
 import styles from './page.module.css'
 
@@ -9,21 +9,22 @@ export const metadata: Metadata = {
   title: 'chora blog | news',
 }
 
-async function getPosts() {
-  const allPosts = getAllPosts().filter(p => p.tags.includes('news'))
+// async function getPosts() {
+//   const allPosts = getAllPosts().filter(p => p.tags.includes('news'))
+//
+//   // sort posts by date
+//   return allPosts.sort((a, b) => {
+//     if (a.date < b.date) {
+//       return 1
+//     } else {
+//       return -1
+//     }
+//   })
+// }
 
-  // sort posts by date
-  return allPosts.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1
-    } else {
-      return -1
-    }
-  })
-}
+const NewsPage = async () => {
+  // const posts = await getPosts()
 
-const HomePage = async () => {
-  const posts = await getPosts()
   return (
     <div className={styles.container}>
       <Background />
@@ -59,4 +60,4 @@ const HomePage = async () => {
   )
 }
 
-export default HomePage
+export default NewsPage
