@@ -1,7 +1,7 @@
 {
   "name": "blog",
   "private": true,
-  "description": "chora studio blog",
+  "description": "chora blog",
   "version": "0.0.0",
   "homepage": "https://blog.chora.studio",
   "bugs": {
@@ -9,14 +9,34 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/studio/blog"
+    "url": "https://github.com/chora-studio/blog"
   },
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build",
-    "deploy": "sh ./deploy.sh"
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "test": "echo 'test not configured'",
+    "clean": "rm -rf .next dist node_modules"
+  },
+  "dependencies": {
+    "gray-matter": "^4",
+    "next": "^14",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "vuepress": "^2.0.0-beta.62"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6",
+    "@typescript-eslint/parser": "^6",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "^14",
+    "postcss": "^8",
+    "prettier": "^3",
+    "tailwindcss": "^3",
+    "typescript": "^5"
   }
 }

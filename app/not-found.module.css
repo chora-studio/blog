@@ -1,0 +1,58 @@
+/* page */
+
+.page {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--footer-height);
+  min-height: 100vh;
+}
+
+/* page-with-sidebar */
+
+.page-with-sidebar {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--footer-height);
+  padding-left: var(--sidebar-width);
+  min-height: 100vh;
+}
+
+/* page and page-with-sidebar */
+
+.page h1,
+.page-with-sidebar h1 {
+  margin-bottom: 1.5em;
+}
+
+.page > div,
+.page-with-sidebar > div {
+  margin-top: var(--header-height);
+  padding-top: 4em;
+}
+
+/* page-center */
+
+.page-center {
+  background: var(--background-primary-transparent);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.page-center div {
+  margin-bottom: 2%;
+}
+
+.page-center h1 {
+  color: var(--color-theme);
+  font-size: 2.5em;
+}
+
+.page-center h1,
+.page-center h2 {
+  margin: 0.5em 0;
+}
