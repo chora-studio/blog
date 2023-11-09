@@ -1,8 +1,8 @@
 'use client'
 
-import { ThemeContext } from '@contexts/ThemeContext'
-import darkBackground from '../public/images/chora_dark.png'
-import lightBackground from '../public/images/chora_light.png'
+import { ThemeContext } from 'chora/contexts'
+import darkBackground from 'chora/assets/images/chora_dark.png'
+import lightBackground from 'chora/assets/images/chora_light.png'
 import Image from 'next/image'
 import { useContext } from 'react'
 

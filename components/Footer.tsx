@@ -1,8 +1,8 @@
 'use client'
 
-import { ThemeContext } from '@contexts/ThemeContext'
-import choraLogoDark from '../public/images/chora_dark_small.png'
-import choraLogoLight from '../public/images/chora_light_small.png'
+import { ThemeContext } from 'chora/contexts'
+import choraLogoDark from 'chora/assets//images/chora_dark_small.png'
+import choraLogoLight from 'chora/assets//images/chora_light_small.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useContext } from 'react'

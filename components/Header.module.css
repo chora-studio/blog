@@ -16,6 +16,10 @@
   margin: 0 1em;
 }
 
+.header button {
+  background: none;
+}
+
 /* title */
 
 .title {
