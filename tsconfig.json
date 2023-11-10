@@ -20,7 +20,7 @@
       }
     ],
     "paths": {
-      "@utils/*": ["utils/*"]
+      "@utils": ["utils/index.ts"]
     }
   },
   "include": [

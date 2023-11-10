@@ -1,0 +1,1 @@
+export { getAllDocs } from './docs'
