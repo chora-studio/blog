@@ -4,23 +4,22 @@ import matter from 'gray-matter'
 
 const docsDirectory = path.join(process.cwd(), 'docs')
 
-export function getAllDocs() {
+export const getDocs = () => {
   const fileNames = fs.readdirSync(docsDirectory)
   return fileNames.map((fileName) => {
-    // Remove ".md" from file name to get id
+    // set id and full path
     const id = fileName.replace(/\.md$/, '')
-
-    // Read markdown file as string
     const fullPath = path.join(docsDirectory, fileName)
+
+    // read file contents
     const fileContents = fs.readFileSync(fullPath, 'utf8')
 
-    // Use gray-matter to parse the post metadata section
-    const { content, data} = matter(fileContents)
+    // parse file contents
+    const { data } = matter(fileContents)
 
-    // Combine the data with the id
+    // return id and data
     return {
       id,
-      content,
       ...data,
     }
   }) as any[]

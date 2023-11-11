@@ -2,7 +2,7 @@ import { Background } from 'chora/components'
 import { Metadata } from 'next'
 import Link from 'next/link'
 
-import { getAllDocs } from '@utils'
+import { getDocs } from '@utils'
 
 import styles from './page.module.css'
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 }
 
 async function getPosts() {
-  const allPosts = getAllDocs()
+  const allPosts = getDocs()
 
   // sort posts by date
   return allPosts.sort((a, b) => {
@@ -51,9 +51,9 @@ const HomePage = async () => {
             {posts.map(({ id, date, title, author }) => (
               <li key={id}>
                 <Link href={`/${id}`}>
-                  <p>{title}</p>
-                  <p>{date}</p>
-                  <p>{author}</p>
+                  <h4>{date}</h4>
+                  <h2>{title}</h2>
+                  <h3>{`by ${author}`}</h3>
                 </Link>
               </li>
             ))}

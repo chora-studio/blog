@@ -20,11 +20,13 @@
     "clean": "rm -rf .next dist node_modules"
   },
   "dependencies": {
-    "chora": "npm:@chora-io/chora@v0.1.0-beta1",
+    "chora": "npm:@chora-io/chora@v0.1.0-beta2",
     "gray-matter": "^4",
     "next": "^14",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "remark": "^15",
+    "remark-html": "^16"
   },
   "devDependencies": {
     "@types/node": "^20",

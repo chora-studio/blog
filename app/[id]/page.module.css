@@ -1,32 +1,25 @@
 .container {
-  composes: container from '../../styles/page-index.css';
+  composes: container from '../../styles/page.css';
 }
 
 .banner {
-  composes: banner from '../../styles/page-index.css';
+  composes: banner from '../../styles/page.css';
   min-height: 40vh !important;
 }
 
 .banner h1 {
   color: var(--color-theme);
+  font-size: 1.75em;
+  margin: 0.5em auto;
 }
 
 .banner h2,
 .banner h3 {
-  margin: 0.5em auto;
-  opacity: 0.9;
-}
-
-.banner h2 {
-  font-size: 1.25em;
-}
-
-.banner h3 {
   font-size: 1em;
-  margin: 1em auto;
+  font-weight: 300;
 }
 
 .content {
-  composes: content from '../../styles/page-index.css';
+  composes: content from '../../styles/page.css';
   min-height: 60vh !important;
 }

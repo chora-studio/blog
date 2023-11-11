@@ -88,3 +88,14 @@
   color: var(--color-text);
   font-weight: 300;
 }
+
+.content h2 {
+  color: var(--color-theme);
+  margin: 0.5em 0;
+}
+
+.content h3,
+.content h4 {
+  font-size: 1em;
+  font-weight: 300;
+}

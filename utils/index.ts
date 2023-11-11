@@ -1,1 +1,2 @@
-export { getAllDocs } from './docs'
+export { getDoc } from './getDoc'
+export { getDocs } from './getDocs'
