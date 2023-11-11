@@ -13,7 +13,7 @@ export const generateStaticParams = () => {
   return getDocs()
 }
 
-const PostsPage = async ({ params }: any) => {
+const PostPage = async ({ params }: any) => {
   const post = await getDoc(params.id)
 
   return (
@@ -33,4 +33,4 @@ const PostsPage = async ({ params }: any) => {
   )
 }
 
-export default PostsPage
+export default PostPage

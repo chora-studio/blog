@@ -6,7 +6,7 @@ import html from 'remark-html'
 
 const docsDirectory = path.join(process.cwd(), 'docs')
 
-export async function getDoc(id) {
+export async function getDoc(id: string) {
   const fullPath = path.join(docsDirectory, `${id}.md`)
 
   // read file contents
@@ -23,5 +23,5 @@ export async function getDoc(id) {
     id,
     content: processedContent.toString(),
     ...data,
-  }
+  } as any
 }
