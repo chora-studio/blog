@@ -1,101 +1,37 @@
-/* container */
-
 .container {
-  background: var(--background-primary-transparent);
-  width: 100vw;
+  composes: container from 'chora/styles/main.css';
 }
 
-/* banner */
-
 .banner {
-  align-items: center;
-  display: flex;
-  font-size: 1.5rem;
-  justify-content: center;
-  min-height: 25vh;
-  text-align: center;
+  composes: banner from 'chora/styles/main.css';
+  min-height: 25vh !important;
 }
 
 .banner div {
-  margin-top: var(--header-height);
+  margin-top: var(--header-height) !important;
 }
-
-.banner h1 {
-  padding: 0.75rem 0;
-}
-
-.banner p {
-  padding: 0.5rem 0;
-}
-
-.banner p > i {
-  color: var(--color-theme);
-}
-
-@media (max-width: 850px) {
-  .banner {
-    font-size: 1.2rem;
-  }
-}
-
-/* content */
 
 .content {
-  align-items: center;
-  background: var(--background-primary);
-  display: flex;
-  font-size: 1.2rem;
-  justify-content: center;
-  min-height: 75vh;
-}
-
-@media (max-width: 850px) {
-  .content {
-    font-size: 1rem;
-  }
-}
-
-.content div {
-  display: block;
-  margin-bottom: 5%;
-  max-width: 650px;
-  padding: 2rem;
-}
-
-.content div h2 {
-  margin-top: 2rem;
-}
-
-.content div p {
-  padding: 1rem 0;
-}
-
-@media (max-width: 850px) {
-  .content div {
-    padding: 2rem;
-  }
+  composes: content from 'chora/styles/main.css';
+  min-height: 60vh !important;
 }
 
 .content ul {
-  list-style: none;
-}
-
-.content li {
-  padding: 1em;
+  list-style: none !important;
 }
 
 .content a {
-  color: var(--color-text);
-  font-weight: 300;
+  color: var(--color-text) !important;
+  font-weight: 300 !important;
 }
 
 .content h2 {
-  color: var(--color-theme);
-  margin: 0.5em 0;
+  color: var(--color-theme) !important;
+  margin: 0.5em 0 !important;
 }
 
 .content h3,
 .content h4 {
-  font-size: 1em;
-  font-weight: 300;
+  font-size: 1em !important;
+  font-weight: 300 !important;
 }

@@ -19,7 +19,12 @@
   font-weight: 300;
 }
 
+@media (max-width: 850px) {
+  .banner h1 {
+    font-size: 1.25em;
+  }
+}
+
 .content {
   composes: content from '../../styles/page.css';
-  min-height: 60vh !important;
 }

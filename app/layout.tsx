@@ -50,22 +50,22 @@ const Layout = ({ children }: any) => (
                 ],
               },
               {
-                title: 'chora protocol',
+                title: 'chora software',
                 items: [
                   {
                     link: 'https://chora.io',
                     target: '_blank',
-                    title: 'chora applications ↗',
+                    title: 'applications ↗',
                   },
                   {
                     link: 'https://docs.chora.io',
                     target: '_blank',
-                    title: 'chora documentation ↗',
+                    title: 'documentation ↗',
                   },
                   {
                     link: 'https://github.com/chora-io',
                     target: '_blank',
-                    title: 'chora repositories ↗',
+                    title: 'repositories ↗',
                   },
                 ],
               },
