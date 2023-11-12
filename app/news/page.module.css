@@ -4,8 +4,10 @@
 
 .banner {
   composes: banner from '../../styles/page.css';
+  min-height: 20vh !important;
 }
 
 .content {
   composes: content from '../../styles/page.css';
+  min-height: 80vh !important;
 }
