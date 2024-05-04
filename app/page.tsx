@@ -34,9 +34,7 @@ const HomePage = async () => {
             <span style={{ opacity: '0.75' }}>{'blog'}</span>
           </h1>
           <p>
-            <i>
-              {'commons governance and ecological regeneration'}
-            </i>
+            <i>{'commons governance and ecological regeneration'}</i>
           </p>
           <p>{'chora studio news and research'}</p>
         </div>

@@ -1,4 +1,3 @@
-import { Background } from 'chora/components'
 import { Metadata } from 'next'
 
 import { getDoc, getDocs } from '@utils'

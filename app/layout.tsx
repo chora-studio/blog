@@ -43,7 +43,7 @@ const Layout = ({ children }: any) => (
                 target: '',
                 title: 'research',
               },
-                'divider',
+              'divider',
               {
                 link: 'https://chora.studio',
                 target: '_blank',
