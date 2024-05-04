@@ -1,22 +1,23 @@
-.container {
-  composes: container from '../../styles/page.css';
+.page {
+  composes: page from 'chora/styles/page.css';
 }
 
 .banner {
-  composes: banner from '../../styles/page.css';
-  min-height: 40vh !important;
+  composes: banner from 'chora/styles/main.css';
 }
 
 .banner h1 {
   color: var(--color-theme) !important;
-  font-size: 1.75em !important;
+  font-size: 1.5em !important;
   margin: 0.5em auto !important;
 }
 
 .banner h2,
 .banner h3 {
+  color: var(--color-text) !important;
   font-size: 1em !important;
   font-weight: 300 !important;
+  opacity: 0.8 !important;
 }
 
 .banner h3 {
@@ -30,6 +31,6 @@
 }
 
 .content {
-  composes: content from '../../styles/page.css';
-  min-height: 60vh !important;
+  composes: content from 'chora/styles/main.css';
+  min-height: calc(100vh - var(--header-height) - var(--footer-height)) !important;
 }

@@ -27,8 +27,7 @@ const NewsPage = async () => {
   const posts = await getPosts()
 
   return (
-    <div className={styles.container}>
-      <Background />
+    <div className={styles.page}>
       <div className={styles.banner}>
         <div>
           <h1 style={{ opacity: '0.75' }}>{'news'}</h1>

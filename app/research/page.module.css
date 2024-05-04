@@ -1,13 +1,30 @@
-.container {
-  composes: container from '../../styles/page.css';
+.page {
+  composes: page from 'chora/styles/page.css';
 }
 
 .banner {
-  composes: banner from '../../styles/page.css';
-  min-height: 20vh !important;
+  composes: banner from 'chora/styles/main.css';
 }
 
 .content {
-  composes: content from '../../styles/page.css';
-  min-height: 80vh !important;
+  composes: content from 'chora/styles/main.css';
+  min-height: calc(100vh - var(--header-height) - var(--footer-height)) !important;
+}
+
+.content h2 {
+  margin: 0.5em 0;
+}
+
+.content h3 {
+  color: var(--color-text);
+  font-weight: 300;
+}
+
+.content h4 {
+  color: var(--color-text);
+  font-weight: 300;
+}
+
+.content ul {
+  list-style: none inside none;
 }

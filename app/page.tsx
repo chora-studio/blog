@@ -1,4 +1,3 @@
-import { Background } from 'chora/components'
 import { Metadata } from 'next'
 import Link from 'next/link'
 
@@ -27,8 +26,7 @@ const HomePage = async () => {
   const posts = await getPosts()
 
   return (
-    <div className={styles.container}>
-      <Background />
+    <div className={styles.page}>
       <div className={styles.banner}>
         <div>
           <h1>
@@ -37,7 +35,7 @@ const HomePage = async () => {
           </h1>
           <p>
             <i>
-              {'what is the role of technology in ecological regeneration?'}
+              {'commons governance and ecological regeneration'}
             </i>
           </p>
           <p>{'chora studio news and research'}</p>

@@ -17,8 +17,7 @@ const PostPage = async ({ params }: any) => {
   const post = await getDoc(params.id)
 
   return (
-    <div className={styles.container}>
-      <Background />
+    <div className={styles.page}>
       <div className={styles.banner}>
         <div>
           <h3>{post.date}</h3>
