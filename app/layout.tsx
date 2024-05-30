@@ -56,7 +56,7 @@ const Layout = ({ children }: any) => (
                 title: 'chora software',
               },
               {
-                link: 'https://chora.studio/validator',
+                link: 'https://www.mintscan.io/regen/validators/regenvaloper1t8p3zdu3h8qzggfmvvvmtdnaj4trcsfh79xp4e',
                 target: '_blank',
                 title: 'chora validator',
               },
@@ -110,17 +110,17 @@ const Layout = ({ children }: any) => (
                 title: 'chora validator',
                 items: [
                   {
-                    link: 'https://www.mintscan.io/regen/validators/regenvaloper1t8p3zdu3h8qzggfmvvvmtdnaj4trcsfh79xp4e',
+                    link: 'https://ledger.chora.io/regen-1/network/validator/regenvaloper1t8p3zdu3h8qzggfmvvvmtdnaj4trcsfh79xp4e',
                     target: '_blank',
                     title: 'regen',
                   },
                   {
-                    link: 'https://chora.io/ledger',
+                    link: 'https://ledger.chora.io/regen-redwood-1/network/validator/regenvaloper1399y9huuus9phlv2d5fjnznem65nlmsn0qgfrd',
                     target: '_blank',
                     title: 'regen-redwood',
                   },
                   {
-                    link: 'https://chora.io/scan/ledger',
+                    link: 'https://ledger.chora.io/chora-testnet-1/network/validator/choravaloper1394r2mejx4vaqrqkqm63k8m3qdsx6xzjquwy7u',
                     target: '_blank',
                     title: 'chora-testnet',
                   },
